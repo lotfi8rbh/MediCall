@@ -12,9 +12,9 @@ The global demand for convenient and rapid healthcare access necessitates robust
 
 ### 1.2 Key Objectives
 
-* To design a multi-user application architecture (Patient, Doctor, Administrator).
-* To implement a secure, end-to-end encrypted video conferencing feature for consultations.
-* To develop a robust system for managing electronic patient records (EPR) and digital prescriptions.
+* To design and implement dedicated, feature-rich interfaces for both the Doctor and the Patient.
+* To provide robust scheduling and calendar management for practitioners.
+* To develop a secure system for patient registration, authentication, and medical record management.
 * To ensure compliance with data protection standards (e.g., GDPR, HIPAA - *Mention the relevant standard for your region*).
 * To provide an intuitive and responsive user experience across devices.
 
@@ -30,28 +30,44 @@ MediCall adopts a modern, decoupled architecture to ensure scalability, maintain
 | **Backend** | **[Node.js (Express) / Python (Django/Flask)]** | RESTful API server, business logic, and security middleware. |
 | **Database** | **[PostgreSQL / MongoDB / MySQL]** | Persistent storage for application and patient data. |
 | **Real-Time Comm.** | **[WebRTC / Agora.io / Twilio Video]** | Protocol/Service for high-quality, secure video consultation streams. |
-| **Authentication** | **[JWT / OAuth 2.0]** | Secure user identification and access control. |
+| **Authentication** | **[JWT / OAuth 2.0]** | Secure user identification and access control (Login/Signup). |
 | **Deployment** | **[Docker / Kubernetes / Cloud Provider]** | Application containerization and hosting infrastructure. |
 
 ## 3. Core Functionalities
 
-### 3.1 Patient Module
-* **Provider Search:** Filters and searches for doctors based on specialty, rating, and availability.
-* **Appointment Scheduling:** Real-time booking and management of consultation slots.
-* **Secure Video Link:** Access to the encrypted consultation room at the scheduled time.
-* **Document Access:** Retrieval of digital prescriptions, lab results, and consultation reports.
+The application implements distinct interfaces for the patient and the physician, accessible via a mandatory authentication layer (Login/Signup).
 
-### 3.2 Doctor/Provider Module
-* **Appointment Management:** Overview and management of the daily schedule and patient queue.
-* **Electronic Health Record (EHR) Access:** Secure access to patient medical history during the consultation.
-* **E-Prescribing:** Tools for generating and securely issuing digital prescriptions.
-* **Availability Configuration:** Settings to define working hours and consultation rates.
+### 3.1 Doctor Interface Features
+
+The Doctor Interface is designed for fluid and efficient daily clinical practice, featuring a top navigation bar and a left-hand Sidebar for easy navigation.
+
+| Sidebar Item | Description |
+| :--- | :--- |
+| **Dashboard** | Provides vital statistics (daily patient count), an upcoming appointment calendar view, and a task list for work organization. |
+| **Agenda** | Full-screen calendar view for comprehensive schedule management, allowing the doctor to add events, check availability, and plan new appointments. |
+| **Patients** | Management and viewing of the doctor's patient list, with the ability to add new patients and enter relevant information. |
+| **Appointments** | Overview of all scheduled appointments. Doctors can add new appointments, specifying dates, times, and relevant details. |
+| **Consultations** | Management of past consultations. Allows the doctor to add new consultation records, save important information, and access the history of prior consultations. |
+| **Settings** | Personalization options, including profile updates, notification management, and other preference configurations. |
+
+### 3.2 Patient Interface Features
+
+The Patient Interface is designed to simplify appointment booking and personal medical record management.
+
+* **Doctor Search:** Patients can search for available doctors using various criteria, such as specialty or location.
+* **Appointment Booking:** Once a doctor is selected, the patient can choose a date and time to book an appointment. A confirmation is received after validation.
+* **Medical Record Management:** Patients can scan and upload medical documents to enrich their file. This information is accessible to the doctor during consultations.
+* **Favorites Management:** Patients can add doctors to a favorites list for quick access to their information and streamlined re-booking.
 
 ## 4. Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+These instructions will guide you through setting up a copy of the project on your local machine for development and testing purposes.
 
-### 4.1 Prerequisites
+### 4.1 Authentication
+
+The application requires users to authenticate. Access is granted via the **Login page** or by creating a new account on the **Signup page**.
+
+### 4.2 Prerequisites
 
 Ensure you have the following software installed:
 
@@ -60,7 +76,7 @@ Ensure you have the following software installed:
 * [e.g., Python (v3.9+)]
 * [e.g., npm or Yarn]
 
-### 4.2 Installation Steps
+### 4.3 Installation Steps
 
 1.  **Clone the Repository**
     ```bash
