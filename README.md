@@ -65,16 +65,7 @@ These instructions will guide you through setting up a copy of the project on yo
 
 The application requires users to authenticate. Access is granted via the **Login page** or by creating a new account on the **Signup page**.
 
-### 4.2 Prerequisites
-
-Ensure you have the following software installed:
-
-* Git
-* [e.g., Node.js (v16+)]
-* [e.g., Python (v3.9+)]
-* [e.g., npm or Yarn]
-
-### 4.3 Installation Steps
+### 4.2 Installation Steps
 
 1.  **Clone the Repository**
     ```bash
@@ -86,14 +77,14 @@ Ensure you have the following software installed:
     ```bash
     cd backend/
     # Install dependencies
-    npm install  # or pip install -r requirements.txt
+    npm install
     
     # Create and configure the environment file
     cp .env.example .env
     # NOTE: Update the .env file with your database and API keys.
     
     # Start the server
-    npm start # or python app.py
+    npm start
     ```
 
 3.  **Frontend Setup**
