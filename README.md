@@ -78,7 +78,7 @@ Ensure you have the following software installed:
 
 1.  **Clone the Repository**
     ```bash
-    git clone [https://github.com/lotfi8rbh/MediCall.git](https://github.com/lotfi8rbh/MediCall.git)
+    git clone https://github.com/lotfi8rbh/MediCall.git
     cd MediCall
     ```
 
@@ -113,11 +113,10 @@ Ensure you have the following software installed:
 The application will be accessible in your browser at: `http://localhost:[PORT]` (e.g., `http://localhost:3000`).
 
 ## 5. Project Authorship
-
-**[Your First Name Last Name]**
-* **GitHub Profile**: [@lotfi8rbh](https://github.com/lotfi8rbh)
-* **LinkedIn Profile**: [Link to your professional LinkedIn]
-* **Email**: [Your academic or professional email address]
+- **Wassim CHIKHI**
+- **wassim.chikhi@etu.u-paris.fr**
+- **Lotfi RABAH**
+- **lotfirabah2@gmail.com**
 
 ## 6. License
 
