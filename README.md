@@ -6,13 +6,13 @@
 
 ### 1.1 Problem Context
 
-*Replace this section with your specific thesis statement or rationale.*
+The primary challenge identified is the need for an innovative solution for the efficient management of medical practices. While numerous software solutions exist for managing clinics, they often feature complex and poorly ergonomic interfaces that do not consistently meet the specific needs of healthcare professionals.
 
-The global demand for convenient and rapid healthcare access necessitates robust digital alternatives. This project addresses the challenge of designing and implementing a secure, scalable teleconsultation ecosystem capable of managing patient data confidentiality, enabling real-time video communication, and streamlining clinical workflows, such as electronic prescribing and appointment management.
+In this context, our objective is to design and implement a user-friendly and intuitive web application with advanced features. We aim to simplify the daily routines of healthcare professionals by providing a platform that is easy to use and tailored to their specific needs. This will allow them to save time and focus on their primary mission: patient care.
 
 ### 1.2 Key Objectives
 
-* To design and implement dedicated, feature-rich interfaces for both the Doctor and the Patient.
+* To design and implement dedicated, feature-rich interfaces for both the Doctor and the Patient, prioritizing *ergonomics* and *intuitiveness*.
 * To provide robust scheduling and calendar management for practitioners.
 * To develop a secure system for patient registration, authentication, and medical record management.
 * To ensure compliance with data protection standards (e.g., GDPR, HIPAA - *Mention the relevant standard for your region*).
