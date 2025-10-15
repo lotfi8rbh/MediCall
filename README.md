@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 
-**MediCall** is a comprehensive software solution developed as a **Final Year Project (FYP)** for the Bachelor's degree. It establishes a secure, web-based platform designed to facilitate remote medical consultations between patients and certified healthcare providers. The core objective is to leverage digital technology to enhance accessibility, efficiency, and safety within the primary healthcare sector.
+**MediCall** is a comprehensive software solution developed as a **Final Year Project (FYP)** for the Bachelor's degree. It establishes a secure, web-based platform designed to **efficiently manage medical practices and patient appointments**. The core objective is to leverage digital technology to enhance the administrative workflow, scheduling, and patient record management within primary healthcare centers.
 
 ### 1.1 Problem Context
 
@@ -26,12 +26,10 @@ MediCall adopts a modern, decoupled architecture to ensure scalability, maintain
 
 | Component | Technology | Role |
 | :--- | :--- | :--- |
-| **Frontend** | **[React / Vue.js / Angular]** | Client-side interface development and state management. |
-| **Backend** | **[Node.js (Express) / Python (Django/Flask)]** | RESTful API server, business logic, and security middleware. |
-| **Database** | **[PostgreSQL / MongoDB / MySQL]** | Persistent storage for application and patient data. |
-| **Real-Time Comm.** | **[WebRTC / Agora.io / Twilio Video]** | Protocol/Service for high-quality, secure video consultation streams. |
-| **Authentication** | **[JWT / OAuth 2.0]** | Secure user identification and access control (Login/Signup). |
-| **Deployment** | **[Docker / Kubernetes / Cloud Provider]** | Application containerization and hosting infrastructure. |
+| **Frontend** | **React** | Client-side interface development and state management. |
+| **Backend** | **Node.js (Express)** | RESTful API server, business logic, and security middleware. |
+| **Database** | **MongoDB** | Persistent storage for application and patient data. |
+| **Authentication** | **JWT** | Secure user identification and access control (Login/Signup). |
 
 ## 3. Core Functionalities
 
